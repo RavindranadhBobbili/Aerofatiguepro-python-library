@@ -61,6 +61,16 @@ aerofatiguepro/
 │   └── streamlit_app.py
 │
 └── .github/workflows/ci.yml
+
+
+
+from aerofatiguepro.core import fit_basquin
+
+stress = [760,700,650,600,550]
+cycles = [1e4,3e4,8e4,2e5,7e5]
+
+fit = fit_basquin(stress, cycles)
+print(fit)
 • CI/CD ready
 
 
